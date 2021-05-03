@@ -33,15 +33,15 @@ section {
 h2{
     
     position: relative;
-    left: 60%;
+    top:-2px;
+    left: 60.3%;
     width: 40%;  
     text-align: center;
     font-size: 150%;
     font-weight: bold;
     padding-right: 15px;
     padding-left: 15px;
-    border-bottom: solid 2px black;
-    border-left: solid 2px black;
+    border: solid 2px black;
     margin-top: 0px;
     margin-bottom: 0px;
     background-color: cornflowerblue; 
@@ -75,29 +75,29 @@ p{
 }
 
 @media (min-width: 992px) {
-    .columns-3,.columns-2
+    .col-lg-4,.col-md-6
     {
         float: left;
     }
    
-    .columns-3{
-        width: 30%;
+    .col-lg-4{
+        width: 30%;        /* 90%(width->excluding the margin left space for sections)/12 == 7.5% per grid) */ 
     }
     
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .columns-1,.columns-2,.columns-3,.columns-4,.columns-5,.columns-6,.columns-7,.columns-8,.columns-9,.columns-10,.columns-11,.columns-12
+    .col-lg-4,.col-md-6
     {
         float: left;
     }
     
-    .columns-2{
-        width: 45%;
+    .col-md-6{
+        width: 45%;         /* 90%(width->excluding the margin left space for sections)/12 == 7.5% per grid) */
     }
 
     .S3{
-        width: 92.45%;
+        width: 92.45%;      /* 90% + 2.45%(margin left value for sections) == 92.45%  */
     }
 
     #Sushi{
