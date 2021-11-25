@@ -62,8 +62,8 @@ WARNING!!! WARNING!!!
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
   if (lower == check) {
-    byeSpeaker.speak();
+    byeSpeaker.speak(names[i]);
   } else {
-    helloSpeaker.speak();
+    helloSpeaker.speak(names[i]);
   }
 }})(window);
