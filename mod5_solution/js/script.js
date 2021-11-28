@@ -105,7 +105,7 @@ function buildAndShowHomeHTML (categories) {
 
       var randomcategory = chooseRandomCategory (categories);
       var chosenCategoryShortName = randomcategory.short_name;
-      html = insertProperty(homeHtml,randomCategoryShortName,"'" + chosenCategoryShortName + "'");
+      html = insertProperty(homeHtml,"randomCategoryShortName","'" + chosenCategoryShortName + "'");
       
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
